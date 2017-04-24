@@ -1,0 +1,30 @@
+{
+  "name": "simple-graphql-starter",
+  "version": "1.0.0",
+  "description": "Simple graphql starter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delveintechnolabs/simple-graphql-starter.git"
+  },
+  "keywords": [
+    "node-graphql-starter",
+    "graphql-starter"
+  ],
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "4.14.0",
+    "express-graphql": "^0.6.4",
+    "graphql": "^0.9.3",
+    "graphql-type-json": "^0.1.4"
+  },
+  "author": "Hannan Munshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delveintechnolabs/simple-graphql-starter/issues"
+  },
+  "homepage": "https://github.com/delveintechnolabs/simple-graphql-starter#readme"
+}
