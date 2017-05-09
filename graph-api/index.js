@@ -9,12 +9,24 @@ const {
 } = require('graphql');
 const { GraphQLError } = require('graphql/error');
 
+const Users = require('./schemas/users');
+
 const RootQuery = new GraphQLObjectType({
   name: 'OpenRootQuery',
   description: 'Open root query',
   fields: () => {
     return {
-      //Your queries go here.
+      users: {
+        type: Users.Schema,
+        resolve(root, args, req){
+          return{
+            id: 1,
+            first_name: 'John',
+            last_name: 'Doe',
+            email: 'john_doe@example.com'
+          };
+        }
+      }
     }
   }
 });
